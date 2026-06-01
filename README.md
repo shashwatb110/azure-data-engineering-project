@@ -11,61 +11,8 @@ The project showcases data ingestion, transformation, storage, and analytics wor
 ## Architecture
 
 Architecture Diagram
-                    ┌─────────────────┐
-                    │   Source Data   │
-                    │  (CSV / APIs)   │
-                    └────────┬────────┘
-                             │
-                             ▼
-                  ┌────────────────────┐
-                  │ Azure Data Factory │
-                  │   Orchestration    │
-                  └────────┬───────────┘
-                           │
-                           ▼
-            ┌─────────────────────────────┐
-            │ ADLS Gen2 - Landing Zone    │
-            │ batch_id = YYYY-MM-DD       │
-            └─────────────┬───────────────┘
-                          │
-                          ▼
-         ┌──────────────────────────────────┐
-         │ Databricks Incremental Framework │
-         └──────────────────────────────────┘
-                          │
-        ┌─────────────────┼─────────────────┐
-        ▼                 ▼                 ▼
+          <img width="235" height="686" alt="image" src="https://github.com/user-attachments/assets/4d0961c3-d4d5-4f51-bb0e-f0ee7ec690cd" />
 
- ┌─────────────┐   ┌─────────────┐   ┌─────────────┐
- │ Bronze Layer│ → │ Silver Layer│ → │ Gold Layer  │
- │ Raw Delta   │   │ Clean Delta │   │ Business KPIs│
- └─────────────┘   └─────────────┘   └─────────────┘
-        │                 │                 │
-        └─────────────────┼─────────────────┘
-                          ▼
-
-            ┌─────────────────────────┐
-            │ Batch Control Table     │
-            │ batch_id                │
-            │ status                  │
-            │ start_time              │
-            │ end_time                │
-            └───────────┬─────────────┘
-                        │
-                        ▼
-
-             ┌─────────────────────┐
-             │ Incremental Loading │
-             │ Process New Batches │
-             │ Skip Completed Ones │
-             └──────────┬──────────┘
-                        │
-                        ▼
-
-              ┌──────────────────┐
-              │ Power BI Reports │
-              │ Dashboards       │
-              └──────────────────┘
 
 ### Data Flow
 
