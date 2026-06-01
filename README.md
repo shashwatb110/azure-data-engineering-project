@@ -10,8 +10,7 @@ The project showcases data ingestion, transformation, storage, and analytics wor
 
 ## Architecture
 
-![Architecture Diagram](<img width="1037" height="622" alt="image" src="https://github.com/user-attachments/assets/35451b96-6081-4f5d-a4c7-965d13188b11" />
-)
+![Architecture Diagram](<img width="1037" height="622" alt="image" src="https://github.com/user-attachments/assets/35451b96-6081-4f5d-a4c7-965d13188b11" />)
 
 ### Data Flow
 
