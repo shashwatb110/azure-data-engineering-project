@@ -163,7 +163,8 @@ GitHub:
 https://github.com/shashwatb110
 
 LinkedIn:
-[(Add your LinkedIn profile)](https://www.linkedin.com/in/shashwat-bhardwaj-15a25a24b/?skipRedirect=true)
+[(<img width="1024" height="1536" alt="mage Jun 1, 2026, 11_56_29 PM" src="https://github.com/user-attachments/assets/41c200aa-09aa-4013-bbe2-b4bbaceba4b2" />
+)](https://www.linkedin.com/in/shashwat-bhardwaj-15a25a24b/?skipRedirect=true)
 
 ---
 
